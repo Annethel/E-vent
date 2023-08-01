@@ -1,0 +1,126 @@
+.co{
+    text-align: center;
+    padding-top: 30px;
+}
+.rsvp{
+    background-image: url('../../../../assets/Rectangle 3.png');
+    width: 100% !important;
+   height: 200px;
+    color: white;
+    
+}
+.hea h1{
+    padding-top: 170px;
+    padding-left: 20px;
+    font-weight: 600;
+    font-size: 4vw;
+    padding: 20px;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    padding-left: 5px;
+    color:#F86F03;
+}
+
+.hea{
+    width: 90%;
+}
+.rsvpp{
+    padding-left: 30px;
+    
+}
+
+input{
+    color: rgb(11, 11, 11);
+    border: 0.6px solid #b4acac;
+    height: 48px;
+    padding-left: 10px;
+    font-weight: 200;
+    border-radius: 4px;
+    margin-left: 40px;
+    
+   
+}
+.fullname input{
+    width: 300px;
+    /*  */
+    margin-bottom: 40px;
+}
+.d-flex{
+    margin-left: 100px;
+    width: 80%;
+    position: relative;
+}
+
+.email input{
+    margin-bottom: 40px;
+    /* margin-left: 40px; */
+    width: 640px;
+}
+
+label{
+    display: inline;
+    float: left !important;
+    width: 180px;
+    font-size: 1em;
+    font-weight: 400;
+}
+.head h1{
+    font-size: 2.5em;
+    font-weight: 500;
+    color: #F86F03;
+}
+.head{
+   margin: 40px;
+}
+h4{
+    font-size: 1em;
+    font-weight: 200;
+}
+hr{
+    color: #F86F03;
+
+}
+button{
+    background-color: #F86F03;
+    color: white;
+    width: 200px;
+    height: 40px;  
+    border-radius: 10px;
+}
+.btn{
+    text-align: center;
+    margin-left: 35%;
+}
+
+
+
+@media only screen and (max-width:1200px){
+    input{
+        margin-left: 0px;
+       
+    }
+    label{
+        margin-bottom: 10px;
+    }
+    .fullname input{
+        width: 100%;
+
+    }
+    .email input{
+        width: 100%;
+    }
+    .btn{
+        margin-left: 0%;
+        padding-left: 0px;
+    }
+    .head{
+        margin-left: 0px;
+    }
+    .d-flex{
+        margin-left: 0px;
+    }
+
+}
+

@@ -1,0 +1,56 @@
+<div class="rsvp">
+  <div class="co"></div>
+  <div class="hea">
+      <h1>Welcome to E-vent</h1>
+  </div>
+  
+</div>
+<div class="rsvpp">
+  <div class="row">
+    <div class="head">
+        <h1>Register</h1>
+        <h4>Please let us know You</h4>
+    </div>
+
+
+    <div class="d-flex">
+
+        <form  (ngSubmit)="onSubmit()">
+            
+
+            <div class="fullname col-md-12">
+                <label for="Fullname">Name</label>
+                <input id="fn" type="text" placeholder="Full name" formControlName="fullname">
+                <input type="text" placeholder="User name" formControlName="username">
+            </div>
+            <div class="email col-md-12">
+                <label for="username">Phone Number</label>
+                <input type="text" placeholder="+237 6..." formControlName="tel">
+            </div>
+            <div class="email col-md-12">
+              <label for="email">What do you do?</label>
+              <input type="text" placeholder="e.g Event organizer" formControlName="occupation">
+          </div>
+
+            <div class="email col-md-12">
+                <label for="email">Email</label>
+                <input type="text" placeholder="ex: myname@gmail.com" formControlName="email">
+            </div>
+            <div class="email col-md-12">
+              <label for="email">password</label>
+              <input type="password" placeholder="enter your password" formControlName="password">
+          </div>
+
+           
+            <div class="btn">
+                <button type="submit" class="col-md-12 ">Submit</button>
+            </div>
+            
+            <p>Already have an account? <a href="#">login</a></p>
+        </form>
+
+    </div>
+
+</div>
+  
+</div>

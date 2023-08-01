@@ -1,0 +1,27 @@
+
+<div class="rsvp">
+    <div class="co"><app-search></app-search></div>
+    <div class="head"  *ngFor="let item of eventDetails" >
+        <h1>{{item.title}}</h1>
+        <div class="row columns">
+            <div class="col-sm-12 col-md-5">
+                <div class="locatime">
+                    <fa-icon class="fas" [icon]="falocation"></fa-icon> <span>{{item.location}}</span>
+                </div>
+                <div class="locatime"> 
+                    <fa-icon class="fas" [icon]="faclock"></fa-icon> <span>{{item.time}}</span>
+                </div>
+               
+            </div>
+            <div class="col-sm-12 col-md-7 my-4">
+                <h4>Organizer: <span>{{item.organizer}}</span></h4>
+                <div class="detail">
+                    {{item.detail}}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div class="rsvpp"><app-rsvp-form></app-rsvp-form></div>
+

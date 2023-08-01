@@ -1,0 +1,20 @@
+<div class="row mx-5 rowgap">
+    <div class="col-md-6 col-sm-12" *ngFor="let item of eventDeatils">
+        <div class="eventcards row">
+            <div class="col-sm-4 col-md-4">
+                <img src="../../../assets/glasses.jpg" alt="">
+            </div>
+
+            <div class="col-sm-8 col-md-8 ">
+                <h3>{{item.title}}</h3>
+                <h4>{{item.planner}}</h4>
+                <div class="location"><fa-icon class="fas" [icon]="falocation"></fa-icon> <span>{{item.location}}</span>
+                </div>
+                <div class="location"> <fa-icon class="fas" [icon]="faclock"></fa-icon> <span>{{item.time}}</span> <a
+                        href="#">RSVP...</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

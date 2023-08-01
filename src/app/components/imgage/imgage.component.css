@@ -1,0 +1,14 @@
+.headimage {
+    
+    width: 100% !important;
+    height: 270px;
+    color: white;
+    margin-top: -60px;
+    z-index: 1;
+}
+h1{
+   padding-top: 170px;
+   padding-left: 20px;
+   font-weight: 600;
+   font-size: 4vw;
+}

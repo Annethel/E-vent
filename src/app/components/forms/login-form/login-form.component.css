@@ -1,0 +1,77 @@
+.co{
+    text-align: center;
+    padding-top: 30px;
+}
+.rsvp{
+    background-image: url('../../../../assets/Rectangle 3.png');
+    width: 100% !important;
+   height: 200px;
+    color: white;
+    
+}
+.hea h1{
+    padding-top: 170px;
+    padding-left: 20px;
+    font-weight: 600;
+    font-size: 4vw;
+    padding: 20px;
+    margin-top: 20px;
+}
+.hea{
+    width: 90%;
+}
+
+
+input{
+    color: rgb(11, 11, 11);
+    border: 0.6px solid #b4acac;
+    height: 48px;
+    padding-left: 10px;
+    font-weight: 200;
+    border-radius: 4px;
+   margin-bottom: 20px;
+    width: 100%;
+}
+
+label{
+    display: inline;
+    padding-bottom: 10px;
+    width: 200px;
+    font-size: 1em;
+    font-weight: 400;
+
+}
+/* .d-flex{
+    margin-left: 40px;
+    width: 100%  !important; 
+    position: relative;
+} */
+button{
+    background-color: #F86F03;
+    color: white;
+    width: 200px;
+    height: 40px;  
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+a{
+    text-decoration: none;
+    padding-left: 5px;
+    color:#F86F03;
+}
+
+.row{
+    width: 90%;
+    justify-content: center;
+}
+.head h1{
+    font-size: 2.5em;
+    font-weight: 500;
+    color: #F86F03;
+}
+.head{
+    
+   margin: 40px;
+}
+

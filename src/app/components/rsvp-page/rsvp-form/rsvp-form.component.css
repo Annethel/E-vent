@@ -1,0 +1,107 @@
+input{
+    color: rgb(11, 11, 11);
+    border: 0.6px solid #b4acac;
+    height: 48px;
+    padding-left: 10px;
+    font-weight: 200;
+    border-radius: 4px;
+    margin-left: 40px;
+   
+}
+.fullname input{
+    width: 300px;
+    /*  */
+    margin-bottom: 40px;
+}
+.d-flex{
+    justify-content: center;
+    width: 100%;
+    position: relative;
+   
+   
+}
+
+.email input{
+    margin-bottom: 40px;
+    /* margin-left: 40px; */
+    width: 640px;
+}
+textarea{
+    color: rgb(11, 11, 11);
+    border: 0.6px solid #b4acac;
+    height: 150px;
+    padding-left: 10px;
+    font-weight: 200;
+    border-radius: 4px;
+    width: 640px;
+    margin-left: 40px;
+}
+label{
+    display: inline;
+    float: left !important;
+    width: 180px;
+    font-size: 1em;
+    font-weight: 400;
+}
+h1{
+    font-size: 2.5em;
+    font-weight: 500;
+    color: #F86F03;
+}
+.head{
+   margin: 40px;
+}
+h4{
+    font-size: 1em;
+    font-weight: 200;
+}
+hr{
+    color: #F86F03;
+
+}
+button{
+    background-color: #F86F03;
+    color: white;
+    width: 200px;
+    height: 40px;  
+    border-radius: 10px;
+}
+.btn{
+    text-align: center;
+    margin-left: 35%; 
+}
+
+
+@media only screen and (max-width:1200px){
+    input{
+        margin-left: 0px;
+       
+    }
+    label{
+        margin-bottom: 10px;
+    }
+    .fullname input{
+        width: 100%;
+
+    }
+    textarea{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .email input{
+        width: 100%;
+    }
+    .btn{
+        margin-left: 0%;
+        padding-left: 0px;
+    }
+    .head{
+        margin-left: 0px;
+    }
+    .d-flex{
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+}
+

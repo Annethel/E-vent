@@ -1,0 +1,22 @@
+<div class="row mx-3 rowgap ">
+    <div class="col-md-6 col-sm-12" *ngFor="let item of venueDetails">
+        <div class="eventcards row justify-content-center">
+            <div class="d-flex col-md-6 justify-content-space-between">
+                <img src="../../../assets/glasses.jpg" alt="">
+                <img src="../../../assets/glasses.jpg" alt="">
+            </div>
+
+            <div class="row">
+                <h3>{{item.venuename}}</h3>
+                <h4>CFA {{item.price}}</h4>
+                <div class="location"><fa-icon class="fas" [icon]="falocation"></fa-icon> <span>{{item.location}}</span>
+                </div>
+                <div class="location"> <fa-icon class="fas" [icon]="faclock"></fa-icon> <span>{{item.duration}}</span> <a
+                        href="#">more...</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
