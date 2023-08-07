@@ -9,7 +9,7 @@
       <ul>
         <li  ><a routerLink="event" routerLinkActive="active"><fa-icon class="fas" [icon]="eventicon"></fa-icon><span
               class="nav-items d-none d-sm-inline">Events</span></a></li>
-        <li  ><a routerLink="create_event" routerLinkActive="active"><fa-icon class="fas" [icon]="addeventicon"></fa-icon><span
+        <li  ><a routerLink="#" routerLinkActive="active"><fa-icon class="fas" [icon]="addeventicon"></fa-icon><span
               class="nav-items d-none d-sm-inline">Create Event</span></a></li>
         <li  ><a routerLink="venue" routerLinkActive="active"><fa-icon class="fas" [icon]="venuesicon"></fa-icon><span
               class="nav-items d-none d-sm-inline">Venues</span></a></li>
@@ -46,8 +46,8 @@
             </nav> -->
       <!-- <app-regisration-form></app-regisration-form> -->
       <!-- <app-login-form></app-login-form> -->
-      <router-outlet></router-outlet>
-
+      <!-- <router-outlet></router-outlet> -->
+      <app-create-event></app-create-event>
       <!-- <app-events></app-events> -->
 
     </div>
