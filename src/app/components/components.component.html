@@ -1,56 +1,26 @@
-<div class="container-fluid">
-  <div class="row justify-content-end">
-
-
-    <div class="col-2">
-      <a href="#">
-        <h2>E<span class="ee d-none d-sm-inline ">-vent</span></h2>
-      </a>
-      <ul>
-        <li  ><a routerLink="event" routerLinkActive="active"><fa-icon class="fas" [icon]="eventicon"></fa-icon><span
-              class="nav-items d-none d-sm-inline">Events</span></a></li>
-        <li  ><a routerLink="#" routerLinkActive="active"><fa-icon class="fas" [icon]="addeventicon"></fa-icon><span
-              class="nav-items d-none d-sm-inline">Create Event</span></a></li>
-        <li  ><a routerLink="venue" routerLinkActive="active"><fa-icon class="fas" [icon]="venuesicon"></fa-icon><span
-              class="nav-items d-none d-sm-inline">Venues</span></a></li>
-        <li  ><a routerLink="#" routerLinkActive="active" ><fa-icon class="fas" [icon]="addvenueicon"></fa-icon><span
-              class="nav-items d-none d-sm-inline">Advertise</span></a></li>
-
-        <li>
-          <a routerLink="login" routerLinkActive="active">Log In</a>
-        </li>
-        <li  >
-          <a routerLink="register" routerLinkActive="active">Sign up</a>
-        </li>
-      </ul>
-      <span><button class=" d-none d-sm-inline"><span>Contact us</span></button></span>
-
+<div class="main-wrapper">
+  <header>
+    <app-navbar></app-navbar>
+  </header>
+  <main>
+    <!-- sidebar -->
+    <div class="sidebar">
+      <div class="main-side">
+        <a class="logo fs-1 px-4 text-white">
+          E<span class="color-orange">-vent</span>
+        </a>
+        <div class="m-o"><hr></div>
+        <ul class="side-items">
+          <!-- sidebar items -->
+          <li class="side-item" *ngFor="let side of sidebarItems"  ><a [routerLink]="side.routerLink" routerLinkActive="selected"><fa-icon class="icon" [icon]="side.icon"></fa-icon>{{side.name}}</a></li>
+        </ul>
+      </div>
+      <div class="button">
+        <button class="btn-but">Contact us</button>
+      </div>
     </div>
-    <div class="col-10 p-0">
-      <!-- <div class="imagahead"><app-imgage></app-imgage></div> -->
-
-      <!-- <app-venues></app-venues> -->
-      <!-- <app-rsvp-page></app-rsvp-page> -->
-      <!-- <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                  <ul class="nav navbar-nav navbar-right">
-                    <li>
-                      <a href="#">Log In</a>
-                    </li>
-                    <li>
-                        <a href="#">Sign up</a>
-                      </li>
-                    <li><a href="#">Rihnaould</a><span class="as"><fa-icon class="" [icon]="addvenueicon"></fa-icon></span></li>
-                  </ul>
-                </div>
-            </nav> -->
-      <!-- <app-regisration-form></app-regisration-form> -->
-      <!-- <app-login-form></app-login-form> -->
-      <!-- <router-outlet></router-outlet> -->
-      <app-create-event></app-create-event>
-      <!-- <app-events></app-events> -->
-
+    <div class="content">
+      <router-outlet></router-outlet>
     </div>
-
-  </div>
+  </main>
 </div>

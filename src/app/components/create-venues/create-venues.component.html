@@ -1,0 +1,84 @@
+<div>
+    <div class="container-fluid bg">
+        <h1>Create a new Event</h1>
+        <div class="d-flex justify-content-center">
+           
+    
+            <form (ngSubmit)="onSubmit()">
+    
+                <div class="email col-md-12">
+                    <label for="username">Venue Name</label>
+                    <input type="text" placeholder="e.g Hilton Hotel..." formControlName="tel">
+                </div>
+                <div class="email col-md-12">
+                    <label for="email">Venue Owner</label>
+                    <input type="text" placeholder="whose venue is this?" formControlName="location">
+                </div>
+                <div class="fullname col-md-12">
+                    <label for="Fullname">Date and Time</label>
+                    <input id="fn" type="text" placeholder="event date" formControlName="date">
+                    <input type="text" placeholder="event time" formControlName="time">
+                </div>
+                <div class="email col-md-12">
+                    <label for="email">Location</label>
+                    <input type="text" placeholder="event location" formControlName="location">
+                </div>
+    
+                <div class="pic">
+                    <label for="email">Event picture</label>
+                    <div class="">
+                       
+                        <input class="formControl" type="file" (change)="onChange($event)">
+    
+                        <button (click)="onUpload()" class="btn btn-success">
+                            Upload
+                        </button>
+                        
+                    </div>
+    
+                    <!-- Shareable short link of  uploaded file -->
+                    <div class="container text-center jumbotron" *ngIf="shortLink">
+                        <h2> Visit Here</h2>
+                        <a href="{{shortLink}}">{{shortLink}}</a>
+                    </div>
+    
+                    <!--Flag variable is used here-->
+                    <div class="container" *ngIf="loading">
+                        <h3>Loading ...</h3>
+                    </div>
+                </div>
+    
+    
+                <div class="texta col-md-12">
+                    <label for="detail">Event details</label>
+                    <textarea name="text" id="" cols="30" rows="10" formControlName="detail"
+                        placeholder="about event..."></textarea>
+                </div>
+    
+                <hr>
+                
+                 <button type="submit" class="col-md-12 btn btn-success text-center">Submit</button>
+                
+    
+                <hr>
+                <p *ngIf="">See you at the event</p>
+    
+    
+                <!-- <h2 style="color: green">
+                    GeeksforGeeks
+                  </h2>
+                  <h4>
+                        Angular PrimeNG FileUpload Custom Upload
+                  </h4> -->
+                    
+                  <!-- <p-fileUpload name="myfile[]"
+                                url="./upload.php"
+                                [customUpload]="true"
+                                (uploadHandler)="uploadfun($event)"
+                                [auto]="true">
+                  </p-fileUpload> -->
+            </form>
+    
+        </div>
+    </div>
+</div>

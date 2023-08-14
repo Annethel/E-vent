@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { faCalendar, faCalendarPlus, faLocationDot, faLocationPin } from '@fortawesome/free-solid-svg-icons';
+import { sidebarItems } from '../models/data/sideItems.data';
 
 @Component({
   selector: 'app-components',
@@ -7,9 +8,6 @@ import { faCalendar, faCalendarPlus, faLocationDot, faLocationPin } from '@forta
   styleUrls: ['./components.component.css']
 })
 export class ComponentsComponent {
-  eventicon = faCalendar;
-  addeventicon = faCalendarPlus;
-  venuesicon = faLocationDot;
-  addvenueicon = faLocationPin;
 
+  sidebarItems = sidebarItems
 }

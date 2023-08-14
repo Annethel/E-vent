@@ -1,6 +1,6 @@
 <div class="row mx-5 rowgap">
     <div class="col-md-6 col-sm-12" *ngFor="let item of eventDeatils">
-        <div class="eventcards row" routerLink="/create_event">
+        <div class="eventcards row" routerLink="/event">
             <div class="col-sm-4 col-md-4">
                 <img src="../../../assets/glasses.jpg" alt="">
             </div>
@@ -11,7 +11,7 @@
                 <div class="location"><fa-icon class="fas" [icon]="falocation"></fa-icon> <span>{{item.location}}</span>
                 </div>
                 <div class="location"> <fa-icon class="fas" [icon]="faclock"></fa-icon> <span>{{item.time}}</span> <a
-                        href="#">RSVP...</a>
+                    routerLink="/event">RSVP...</a>
                 </div>
             </div>
 

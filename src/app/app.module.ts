@@ -22,6 +22,8 @@ import { FileUploadModule } from 'primeng/fileupload';
 import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } 
     from '@angular/platform-browser/animations';
+import { CreateVenuesComponent } from './components/create-venues/create-venues.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { BrowserAnimationsModule }
     RegisrationFormComponent,
     LoginFormComponent,
     CreateEventComponent,
+    CreateVenuesComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
