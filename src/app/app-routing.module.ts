@@ -8,22 +8,23 @@ import { LoginFormComponent } from './components/forms/login-form/login-form.com
 import { RegisrationFormComponent } from './components/forms/regisration-form/regisration-form.component';
 import { CreateEventComponent } from './components/create-event/create-event.component';
 import { CreateVenuesComponent } from './components/create-venues/create-venues.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
+  {path:'', component:AppComponent},
   {
-    path:'',component:ComponentsComponent,
+    path:'home',component:ComponentsComponent,
     children:[
       {path:'events', component: EventsComponent},
       {path:'event', component:RsvpPageComponent},
       { path: 'venue', component: VenuesComponent },
       {path:'create-event', component:CreateEventComponent},
       {path:'add-venue', component:CreateVenuesComponent},
-      {path:'login', component:LoginFormComponent},
-      {path:'register', component:RegisrationFormComponent},
+     ],
 
-    ],
-
-  }
+  },
+  {path:'login', component:LoginFormComponent},
+  {path:'register', component:RegisrationFormComponent},
 ];
 
 @NgModule({

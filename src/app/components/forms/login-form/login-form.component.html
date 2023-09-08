@@ -13,14 +13,13 @@
           <h4>Access your account</h4>
       </div>
   
-  
       <div class="row">
   
-          <form  (ngSubmit)="onSubmit()">
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
   
               <div class="email col-md-12">
-                  <label for="username">username</label>
-                  <input type="text" placeholder="Enter your Username" formControlName="username">
+                  <label for="username">Email</label>
+                  <input type="text" placeholder="Enter your Username" formControlName="email">
               </div>
               <div class="email col-md-12">
                 <label for="email">password</label>

@@ -15,13 +15,13 @@
 
     <div class="d-flex">
 
-        <form  (ngSubmit)="onSubmit()">
+        <form [formGroup]="formgroup" (ngSubmit)="onSubmit()">
             
 
             <div class="fullname col-md-12">
                 <label for="Fullname">Name</label>
-                <input id="fn" type="text" placeholder="Full name" formControlName="fullname">
-                <input type="text" placeholder="User name" formControlName="username">
+                <input id="fn" type="text" placeholder="First Name" formControlName="first_name">
+                <input type="text" placeholder="Last Name" formControlName="last_name">
             </div>
             <div class="email col-md-12">
                 <label for="username">Phone Number</label>

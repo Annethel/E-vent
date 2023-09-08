@@ -4,6 +4,7 @@
 }
 .rsvp{
     background-image: url('../../../../assets/Rectangle 3.png');
+    background-repeat: no-repeat, repeat;
     width: 100% !important;
    height: 200px;
     color: white;

@@ -24,6 +24,7 @@ import { BrowserAnimationsModule }
     from '@angular/platform-browser/animations';
 import { CreateVenuesComponent } from './components/create-venues/create-venues.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     FileUploadModule,
     BrowserAnimationsModule,
     ButtonModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

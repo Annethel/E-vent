@@ -1,15 +1,15 @@
 <div class="main-wrapper">
-  <header>
-    <app-navbar></app-navbar>
-  </header>
+  
   <main>
     <!-- sidebar -->
     <div class="sidebar">
       <div class="main-side">
-        <a class="logo fs-1 px-4 text-white">
+        <!-- <a class="logo fs-1 px-4 text-white">
           E<span class="color-orange">-vent</span>
         </a>
-        <div class="m-o"><hr></div>
+        <div class="m-o"><hr></div> -->
+        <!-- <a href="#" class="color-orange fs-3 px-4">Dashboard</a>
+        <div class="m-o"><hr></div> -->
         <ul class="side-items">
           <!-- sidebar items -->
           <li class="side-item" *ngFor="let side of sidebarItems"  ><a [routerLink]="side.routerLink" routerLinkActive="selected"><fa-icon class="icon" [icon]="side.icon"></fa-icon>{{side.name}}</a></li>
